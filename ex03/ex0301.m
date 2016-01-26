@@ -1,6 +1,6 @@
-function ex0301
+function ex0301(lambda)
     f = double(imread('lena.pgm'));
-    u = denoise(f,1);
+    u = denoise(f,lambda);
     imshow(uint8(f));
     figure;
     imshow(u);
